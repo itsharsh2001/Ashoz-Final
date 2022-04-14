@@ -1,0 +1,224 @@
+.totalshops{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    height: 100%;
+    /* background-color: yellow; */
+    border-bottom-right-radius: 26px;
+    border-top-right-radius: 26px;
+}
+
+.totalshops nav{
+    width: 100%;
+    /* height: 100px; */
+    height: 18.2%;
+    /* background-color: yellow; */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+    padding-left: 4%;
+    padding-right: 4%;
+}
+
+.totalshops nav div:nth-child(1){
+    width: 55%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.totalshops nav div:nth-child(1)>div{
+    width: 70%;
+    /* width: 300px; */
+    height: 37px;
+}
+.totalshops nav div:nth-child(1)>button{
+    width: 25%;
+    height: 37px;
+}
+
+.totalshops nav div:nth-child(2){
+    width: 25%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* font-size: 30px!important; */
+}
+
+.settings{
+    font-size: 28px;
+    cursor: pointer;
+    transition: all ease 0.5s;
+    color: var(--dashboard-brown);
+}
+
+.settings:hover{
+    transform: rotate(90deg);
+}
+
+.totalshops nav div:nth-child(2)>button{
+    width: 65%;
+    height: 37px;
+    margin-right: 10%;
+}
+
+.arrow{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 8.33%;
+    margin: 0;
+    padding: 0;
+    padding-left: 7%;
+    padding-right: 7%;
+}
+
+.arrowicon{
+    font-size: 40px;
+    color: var(--dashboard_red);
+    cursor: pointer;
+    transition: all ease 0.5s;
+}
+
+.arrowicon:hover,
+.arrowicon:active{
+    filter: saturate(5);
+}
+.hamburger{
+    display: none!important;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.hamburger img{
+    display: block;
+    height: 100%;
+    width: 220px;
+    margin-right: 5%;
+}
+
+
+
+
+.totalshops>section{
+    height: 25%;
+    min-width: 100%;
+    margin: 0;
+    padding: 0;
+    /* margin-top: 2%; */
+    margin-bottom: 2%;
+    padding-left: 2%;
+    padding-right: 2%;
+    padding-bottom: 2%;
+    display: grid;
+    grid-template-columns: 250px 250px 250px;
+    grid-template-rows: 100%;
+    justify-content: space-between;
+}
+
+.totalshops>section::-webkit-scrollbar{
+    display: none;
+}
+
+.totalshops>section h4{
+    background: transparent;
+    font: normal normal 500 22px Rubik;
+    font-style: normal;
+    height: 60%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    color: var(--dashboard_red);
+}
+.totalshops>section p{
+    background: transparent;
+    /* font-size: 15px; */
+    margin: 0;
+    padding: 0;
+    /* text-align: left; */
+    text-align: center;
+    font: normal normal 500 15px Rubik;
+    letter-spacing: 0px;
+    color: var(--firozi);
+    opacity: 1;
+}
+
+
+
+
+
+
+
+
+
+
+@media (max-width:1180px) {
+    .totalshops>section{
+        grid-template-columns: 230px 230px 230px;
+    }
+    
+}
+@media (max-width:1070px) {
+    .totalshops>section{
+        grid-template-columns: 220px 220px 220px;
+    }
+.totalshops>section h4{
+    font: normal normal 600 20px Rubik;
+}
+.totalshops>section p{
+    font: normal normal 500 13px Rubik;
+}
+
+.totalshops{
+    width: 100%;
+}
+}
+
+@media (max-width:1000px) {
+    .totalshops>section{
+        grid-template-columns: 205px 205px 205px;
+    }
+}
+
+
+@media (max-width:900px) {
+    .totalshops{
+        width: 100%;
+    }
+    .totalshops nav:nth-child(1){
+        display: none!important;
+    }
+    .hamburger{
+        display: flex!important;
+    }
+}
+
+
+@media (max-width: 830px) {
+    .totalshops>section{
+        grid-template-columns: 230px 230px 230px;
+        height: 130px;
+        /* width: 1000px; */
+        overflow-x: auto!important;
+    }
+    .totalshops::-webkit-scrollbar{
+        display: none;
+    }
+    .totalshops{
+        overflow-y: auto;
+        overflow-x: hidden;
+    }
+    .totalshops>section>span{
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+}
+

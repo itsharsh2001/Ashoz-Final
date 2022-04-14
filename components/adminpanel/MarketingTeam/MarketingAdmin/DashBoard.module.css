@@ -1,0 +1,13 @@
+.dashboard {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 92vw;
+    height: 88vh;
+    z-index: 1;
+    background-color: var(--white);
+    border-radius: 28px;
+    box-shadow: 0 20px 40px var(--boxshadow);
+    overflow-x: hidden;
+    overflow-y: hidden;
+  }

@@ -1,0 +1,20 @@
+import dbConnect from "../../../../lib/dbConnect";
+import Shop from "../../../../models/Shop";
+dbConnect();
+
+
+export default async (req, res) => {
+  const { method } = req;
+
+  switch (method) {
+    case "GET":
+
+        const data = await Shop.find({visitSummary : {$lt: 2}})
+        return res.status(200).json({visitlength:data.length,message:data})
+
+      break;
+    default:
+      res.status(400).json({ message: "error" });
+  }
+};
+

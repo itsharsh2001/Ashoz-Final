@@ -1,0 +1,36 @@
+.input{
+    text-align: left;
+    font: normal normal normal 16px Rubik;
+    letter-spacing: 0px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    color: var(--black);
+    opacity: 1;
+    border-radius: 10px;
+    outline: none;
+    border: 1px solid var(--gray);
+
+}
+
+.input input{
+    font: normal normal normal 16px Rubik;
+    letter-spacing: 0px;
+    color: var(--black);
+    border: none;
+    outline: none;
+    background: transparent;
+    margin: 0;
+    padding: 0;
+    width: 90%;
+    padding-right: 10%;
+}
+
+
+.input input::placeholder{
+    color: var(--black);
+    font: normal normal normal 12px Rubik;
+    text-align: center;
+}
